@@ -1,0 +1,15 @@
+* Dependencies:
+   - libnfnetlink
+   - libnetlink_queue
+   - sqlite3
+   
+* Compiling:
+   - ekstrak sialan_firewall.tar.gz
+   - make
+   - make install
+   
+* Running:
+   - sialan
+   
+* Control:
+   - sialan_ctrl

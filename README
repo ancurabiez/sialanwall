@@ -1,0 +1,35 @@
+Sialan Firewall adalah sebuah program yang ditujukan untuk memblok situs.
+Situs yang terdaftar di database akan diblok atau tidak diblok tergantung
+dari setingan yang dipilih.
+
+Untuk dapat menggunakan Sialan Firewall, library yang harus di-install adalah:
+- BerkeleyDB
+- libnfnetlink
+- libnetfilter_queue
+- jemalloc
+- ncurses
+
+Sialan Firewall compile:
+[sialan_firewall_directory] $ make
+
+Sialan Control compile:
+[sialan_firewall_directory] $ cd sialan_control
+[sialan_control] $ make
+
+Sesudah proses kompile, akan terbentuk file executable:
+- sialan_fw
+- sialan_input
+- sialan_ctl
+- sialan_lookup
+
+* sialan_fw
+File inti untuk memblok situs
+
+* sialan_input
+Untuk memasukan daftar situs secara besar-besaran (dalam satu file).
+
+* sialan_ctl
+Untuk mengontrol Sialan Firewall
+
+* sialan_lookup
+Untuk me-lookup (domain ke ip address) situs yang ada di database.

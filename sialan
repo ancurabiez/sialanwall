@@ -1,0 +1,7 @@
+#! /bin/sh
+
+if [ "$1" == "stop" ]; then
+   killall -s INT sialan_fw
+else
+   /bin/nice -n -10 /usr/sbin/sialan_fw "$1"
+fi
